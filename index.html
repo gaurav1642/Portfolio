@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Kumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS for contact form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h3>Gaurav Kumar</h3>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Hi, I'm <span class="hero__name">Gaurav Kumar</span>
+                    </h1>
+                    <div class="hero__subtitle">
+                        <span class="typing-text"></span>
+                    </div>
+                    <p class="hero__description">
+                        Passionate Computer Science student with a strong foundation in full-stack development, 
+                        problem-solving, and modern web technologies. Eager to contribute to innovative projects 
+                        and grow in the tech industry.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn--outline">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__avatar">
+                        <img src="assets/gaurav.jpeg" alt="" class="hero__avatar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class="fas fa-award about__icon"></i>
+                                <h3 class="about__box-title">Experience</h3>
+                                <span class="about__box-subtitle">2+ Years Learning</span>
+                            </div>
+                            <div class="about__box">
+                                <i class="fas fa-code about__icon"></i>
+                                <h3 class="about__box-title">Projects</h3>
+                                <span class="about__box-subtitle">5+ Completed</span>
+                            </div>
+                            <div class="about__box">
+                                <i class="fas fa-graduation-cap about__icon"></i>
+                                <h3 class="about__box-title">Education</h3>
+                                <span class="about__box-subtitle">B.Tech CSE</span>
+                            </div>
+                        </div>
+                        <p class="about__description">
+                            I'm a dedicated 3rd year B.Tech Computer Science student with a passion for creating 
+                            innovative solutions through code. My expertise spans across full-stack web development, 
+                            with strong problem-solving skills and a keen interest in emerging technologies.
+                        </p>
+                    </div>
+                    
+                    <div class="skills">
+                        <h3 class="skills__title">Technical Skills</h3>
+                        <div class="skills__container">
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">HTML/CSS</span>
+                                    <span class="skill__percentage">90%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">JavaScript</span>
+                                    <span class="skill__percentage">85%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">Python</span>
+                                    <span class="skill__percentage">80%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">React.js</span>
+                                    <span class="skill__percentage">75%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">Node.js</span>
+                                    <span class="skill__percentage">70%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">MongoDB</span>
+                                    <span class="skill__percentage">65%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__container">
+                    <div class="project__card">
+                        <div class="project__image">
+                            <i class="fas fa-globe project__icon"></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Dynamic Portfolio Website</h3>
+                            <p class="project__description">
+                                A fully responsive portfolio website built with HTML, CSS and JavaScript, featuring 
+                                dark/light theme toggle, smooth animations, and contact form functionality.
+                               
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">HTML</span>
+                                <span class="tech__tag">CSS3</span>
+                                <span class="tech__tag">JavaScript</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__image">
+                            <i class="fas fa-bolt project__icon"></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Poke-Vision</h3>
+                            <p class="project__description">
+                                
+Poke Vision is a responsive React app to explore Pokémon with smart search, dark/light themes, and real-time data from the PokeAPI.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">React.js</span>
+                                <span class="tech__tag">PokeAPI</span>
+                                <span class="tech__tag">Tailwind CSS</span>
+                                <span class="tech__tag">HTML</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/gaurav1642/poke-vision" class="project__link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://poke-vision.netlify.app/" class="project__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__image">
+                            <i class="fas fa-user-shield project__icon"></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Logiverse MERN Auth App</h3>
+                            <p class="project__description">
+                                Logiverse is a secure auth app with user signup, login, email OTP verification, password reset, and profile management using the MERN stack.
+                            </p>
+                            <div class="project__tech">
+                                
+                                <span class="tech__tag">MongoDB</span>
+                                <span class="tech__tag">Express</span>
+                                <span class="tech__tag">React</span>
+                                <span class="tech__tag">Node.js</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/gaurav1642/MERN-login-page" class="project__link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://logiverse.onrender.com/" class="project__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__image">
+                            <i class="fas fa-cloud-sun project__icon"></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Weather Forecast App</h3>
+                            <p class="project__description">
+                                Real-time weather application with location-based forecasts, interactive maps, 
+                                and detailed weather analytics using third-party APIs.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">JavaScript</span>
+                                <span class="tech__tag">OpenWeather API</span>
+                                <span class="tech__tag">Chart.js</span>
+                                <span class="tech__tag">CSS3</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__image">
+                            <i class="fas fa-comments project__icon"></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Real-Time Chat Application</h3>
+                            <p class="project__description">
+                                Instant messaging application with real-time communication, file sharing, 
+                                emoji support, and group chat functionality.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">Socket.io</span>
+                                <span class="tech__tag">Node.js</span>
+                                <span class="tech__tag">Express</span>
+                                <span class="tech__tag">MongoDB</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__image">
+                            <i class="fas fa-book project__icon"></i>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Library Management System</h3>
+                            <p class="project__description">
+                                Digital library system with book inventory management, user authentication, 
+                                borrowing system, and automated notifications.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">Python</span>
+                                <span class="tech__tag">Django</span>
+                                <span class="tech__tag">SQLite</span>
+                                <span class="tech__tag">Bootstrap</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project__link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section__title">Education</h2>
+                <div class="education__container">
+                    <div class="education__item">
+                        <div class="education__date">
+                            <span class="education__year">2022 - 2026</span>
+                        </div>
+                        <div class="education__content">
+                            <h3 class="education__title">B.Tech Computer Science and Engineering</h3>
+                            <p class="education__institution">JB Institute of Technology</p>
+                            <p class="education__grade">CGPA: 6.5/10</p>
+                            <p class="education__description">
+                                Relevant coursework: Data Structures & Algorithms, Database Management Systems, 
+                                Computer Networks, Software Engineering, Web Development
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="education__item">
+                        <div class="education__date">
+                            <span class="education__year">2020 - 2022</span>
+                        </div>
+                        <div class="education__content">
+                            <h3 class="education__title">12th Grade (Science)</h3>
+                            <p class="education__institution">Spring Bells School</p>
+                            <p class="education__grade">79.6%</p>
+                            <p class="education__description">
+                                Physics, Chemistry, Mathematics with Computer Science
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education__item">
+                        <div class="education__date">
+                            <span class="education__year">2018 - 2020</span>
+                        </div>
+                        <div class="education__content">
+                            <h3 class="education__title">10th Grade</h3>
+                            <p class="education__institution">Spring Bells School</p>
+                            <p class="education__grade">81.4%</p>
+                            <p class="education__description">
+                                All subjects with distinction in Mathematics and Science
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="resume section" id="resume">
+            <div class="container">
+                <h2 class="section__title">Resume</h2>
+                <div class="resume__container">
+                    <div class="resume__content">
+                        <h3 class="resume__subtitle">Achievements</h3>
+                        <ul class="achievements__list">
+                            <li class="achievement__item">
+                                <i class="fas fa-trophy"></i>
+                                Winner of College Coding Competition 2024
+                            </li>
+                            <li class="achievement__item">
+                                <i class="fas fa-code"></i>
+                                Completed 100+ problems on LeetCode
+                            </li>
+                            <li class="achievement__item">
+                                <i class="fas fa-briefcase"></i>
+                                Internship at Tech Startup (Summer 2024)
+                            </li>
+                            <li class="achievement__item">
+                                <i class="fab fa-github"></i>
+                                Open Source contributor with GitHub repositories
+                            </li>
+                            <li class="achievement__item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                Organized technical workshop on Web Development
+                            </li>
+                        </ul>
+                        <div class="resume__download">
+                            <a href="https://drive.google.com/file/d/1yyVpLFUKM7gYxVERU_3m3p0RRHUTXiaU/view?usp=drivesdk" target="_blank" download class="btn btn--primary resume__btn">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact Me</h2>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <div class="contact__details">
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">gauravchauhan1903@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-phone contact__icon"></i>
+                            <div class="contact__details">
+                                <h3 class="contact__title">Phone</h3>
+                                <span class="contact__subtitle">+91 9193959511</span>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt contact__icon" style="padding-left: 19px;"></i>
+                            <div class="contact__details">
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">India</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://www.linkedin.com/in/gaurav-chauhan-431007307" class="contact__social-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/gaurav1642" class="contact__social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/gaurav_dev" class="contact__social-link" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea id="message" name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__loading hidden">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Success/Error Messages -->
+                <div class="message success hidden" id="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Message sent successfully! I'll get back to you soon.</p>
+                </div>
+                <div class="message error hidden" id="error-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Something went wrong. Please try again later.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Gaurav Kumar</h3>
+                    <p class="footer__description">
+                        Building the future with code, one project at a time.
+                    </p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                        <li><a href="#education" class="footer__link">Education</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Connect</h3>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/gaurav-chauhan-431007307" class="footer__social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/gaurav1642" class="footer__social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/gaurav_dev" class="footer__social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:gauravchauhan1903@gmail.com" class="footer__social-link" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Gaurav Kumar. All rights reserved.</p>
+                <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

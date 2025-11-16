@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🌟 Live Demo
 
-👉 [View the Live Portfolio](https://your-live-demo-link.com) *(replace with your deployed link)*
+👉 https://gaurav-dynamic-portfolio.netlify.app/
 
 ---
 
@@ -120,5 +120,6 @@ This project is open source. Feel free to use, modify, and share it—just give 
 ---
 
 **Thank you for visiting my portfolio!**
+
 
 If you have any questions or want to collaborate, just use the contact form or connect with me on [LinkedIn](https://www.linkedin.com/in/gaurav-chauhan-431007307) or [GitHub](https://github.com/gaurav1642). 

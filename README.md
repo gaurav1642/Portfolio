@@ -37,7 +37,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ### For Non-Technical Users
 
 1. **View Online:**
-   - Just open the [Live Demo](https://your-live-demo-link.com) in your browser!
+   - Just open the [Live Demo](https://gaurav-dynamic-portfolio.netlify.app/) in your browser!
 
 2. **Contact Me:**
    - Use the contact form at the bottom of the page to send a message (it goes directly to my email).
@@ -123,3 +123,4 @@ This project is open source. Feel free to use, modify, and share it—just give 
 
 
 If you have any questions or want to collaborate, just use the contact form or connect with me on [LinkedIn](https://www.linkedin.com/in/gaurav-chauhan-431007307) or [GitHub](https://github.com/gaurav1642). 
+
